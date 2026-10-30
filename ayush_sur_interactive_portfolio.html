@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Ayush Sur — IIT Madras Data Science student focused on machine learning, NLP, and transformer-based models.">
+<title>Ayush Sur | Data Science & Machine Learning</title>
+<style>
+:root{--bg:#080d1a;--panel:#10182a;--panel2:#121e33;--text:#eef4ff;--muted:#a6b4cc;--line:rgba(172,196,233,.16);--accent:#72e0ce;--accent2:#8da8ff;--shadow:0 24px 80px rgba(0,0,0,.25);--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:radial-gradient(ellipse at 15% 0%,rgba(59,91,168,.2),transparent 35%),radial-gradient(ellipse at 100% 25%,rgba(50,178,163,.1),transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}body.light{--bg:#f4f7fc;--panel:#fff;--panel2:#edf2fa;--text:#142033;--muted:#526178;--line:rgba(28,52,88,.14);--shadow:0 24px 80px rgba(36,54,88,.1);background:radial-gradient(ellipse at 15% 0%,rgba(59,91,168,.1),transparent 35%),var(--bg)}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(18px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}.navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:-.06em;font-size:1.25rem}.brand span{color:var(--accent)}.navlinks{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:.91rem}.navlinks a:hover,.navlinks a.active{color:var(--text)}.navactions{display:flex;gap:9px;align-items:center}.iconbtn,.menuBtn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:12px;width:40px;height:40px;display:grid;place-items:center;cursor:pointer}.menuBtn{display:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:13px;border:1px solid var(--line);font-weight:700;font-size:.92rem;transition:.2s;cursor:pointer}.btn.primary{background:var(--accent);color:#09201f;border-color:transparent}.btn.secondary{background:var(--panel);color:var(--text)}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.hero{padding:82px 0 60px;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center;min-height:610px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--muted);font-size:.82rem;background:color-mix(in srgb,var(--panel) 65%,transparent)}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(114,224,206,.12)}h1{font-size:clamp(3rem,7vw,5.7rem);letter-spacing:-.075em;line-height:.99;margin:24px 0 20px;max-width:760px}h1 .gradient{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.08rem;color:var(--muted);max-width:670px;margin:0 0 26px}.cta{display:flex;gap:12px;flex-wrap:wrap}.mini-stats{display:flex;gap:30px;margin-top:35px;flex-wrap:wrap}.stat strong{display:block;font-size:1.5rem;letter-spacing:-.04em}.stat span{font-size:.8rem;color:var(--muted)}.profilecard{position:relative;border:1px solid var(--line);background:linear-gradient(145deg,color-mix(in srgb,var(--panel2) 85%,transparent),var(--panel));border-radius:28px;padding:28px;box-shadow:var(--shadow);overflow:hidden}.profilecard:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(114,224,206,.13);filter:blur(50px);right:-80px;top:-80px}.avatar{width:94px;height:94px;border-radius:26px;display:grid;place-items:center;font-size:2rem;font-weight:900;color:#0a1c27;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 12px 32px rgba(114,224,206,.17)}.profilecard h2{margin:22px 0 4px;font-size:1.5rem;letter-spacing:-.04em}.muted{color:var(--muted)}.status{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;color:var(--accent);margin-top:12px}.profileline{height:1px;background:var(--line);margin:22px 0}.stack{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:.79rem;color:var(--muted);background:color-mix(in srgb,var(--panel) 80%,transparent)}.orbit{position:absolute;right:26px;top:30px;width:70px;height:70px;border:1px solid rgba(141,168,255,.25);border-radius:50%;display:grid;place-items:center;color:var(--accent2);font-size:1.5rem}.section{padding:68px 0}.sectionhead{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.kicker{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.17em;font-weight:800}.section h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.06em;line-height:1.08;margin:8px 0 0}.sectionhead p{max-width:450px;color:var(--muted);margin:0}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{border:1px solid var(--line);background:var(--panel);border-radius:22px;padding:24px}.card h3{margin:0 0 10px;letter-spacing:-.03em}.card p{margin:0;color:var(--muted)}.featurelist{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.feature{padding:14px;border-radius:14px;background:var(--panel2);border:1px solid var(--line)}.feature b{display:block;font-size:.94rem}.feature span{font-size:.8rem;color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.filter{padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;font-size:.84rem}.filter.active{background:var(--accent);color:#09201f;border-color:transparent;font-weight:800}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{border:1px solid var(--line);border-radius:22px;background:var(--panel);overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,border-color .22s}.project:hover{transform:translateY(-5px);border-color:rgba(114,224,206,.55)}.projectvisual{height:150px;padding:18px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(135deg,#142a43,#1c4c61)}.project:nth-child(2) .projectvisual{background:linear-gradient(135deg,#22244b,#514e89)}.project:nth-child(3) .projectvisual{background:linear-gradient(135deg,#183b34,#36756c)}.projectvisual:before{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(255,255,255,.15);border-radius:50%;right:-20px;top:-80px;box-shadow:0 0 0 18px rgba(255,255,255,.025),0 0 0 40px rgba(255,255,255,.02)}.projecticon{font-size:2.2rem;position:absolute;right:22px;top:18px;opacity:.9}.projectnum{font-size:.8rem;letter-spacing:.16em;color:#d6f6f0;position:relative}.projectbody{padding:22px;display:flex;flex-direction:column;flex:1}.projectmeta{font-size:.74rem;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.1em}.project h3{font-size:1.2rem;letter-spacing:-.03em;margin:8px 0}.project p{font-size:.9rem;color:var(--muted);margin:0 0 17px}.project .stack{margin-top:auto}.projectfoot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:20px}.textbtn{border:0;background:transparent;color:var(--accent);font-weight:800;cursor:pointer;padding:0}.textbtn:hover{text-decoration:underline}.skillsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skillgroup h3{display:flex;gap:10px;align-items:center}.skillgroup h3 span{width:34px;height:34px;border-radius:11px;background:var(--panel2);display:grid;place-items:center}.timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.timelineitem{position:relative;padding-left:22px;border-left:1px solid var(--line)}.timelineitem:before{content:"";position:absolute;left:-5px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent)}.timelineitem .date{font-size:.78rem;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.timelineitem h3{margin:7px 0 4px}.timelineitem p{margin:0;color:var(--muted)}.achievement{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}.achievement .big{font-size:2.2rem;font-weight:900;letter-spacing:-.06em;color:var(--accent)}.contactbox{border:1px solid var(--line);border-radius:28px;padding:34px;background:linear-gradient(125deg,var(--panel2),var(--panel));display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}.contactbox h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.06em;line-height:1.08;margin:10px 0 15px}.contactbox p{color:var(--muted);max-width:540px}.contactlinks{display:grid;gap:10px}.contactlink{padding:13px 15px;border:1px solid var(--line);border-radius:13px;display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--panel)}.contactlink span{color:var(--muted);font-size:.82rem}.footer{padding:28px 0 40px;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.modal{position:fixed;inset:0;z-index:30;background:rgba(1,5,14,.72);display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{max-width:620px;width:100%;max-height:85vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.modalhead{display:flex;justify-content:space-between;gap:15px;align-items:start}.modalbox h2{margin:5px 0 10px;letter-spacing:-.04em}.modalbox p,.modalbox li{color:var(--muted)}.close{border:1px solid var(--line);background:var(--panel2);color:var(--text);width:38px;height:38px;border-radius:12px;cursor:pointer}.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:none}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--accent);color:#09201f;padding:11px 16px;border-radius:12px;font-weight:800;font-size:.85rem;opacity:0;pointer-events:none;transition:.2s;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:28px;padding-top:55px;min-height:unset}.profilecard{max-width:520px}.projects{grid-template-columns:repeat(2,1fr)}.skillsgrid{grid-template-columns:1fr 1fr}.contactbox{grid-template-columns:1fr}.sectionhead{align-items:start;flex-direction:column}.navlinks{gap:14px}.navlinks a{font-size:.82rem}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,var(--max))}.navin{height:65px}.menuBtn{display:grid}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 20px 22px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:start}.navlinks.open{display:flex}.navactions .btn{display:none}.hero{padding:42px 0}.mini-stats{gap:20px}.projects,.aboutgrid,.skillsgrid,.timeline{grid-template-columns:1fr}.featurelist{grid-template-columns:1fr 1fr}.section{padding:48px 0}.contactbox{padding:24px}.profilecard{padding:22px}.orbit{width:54px;height:54px;right:20px;top:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="nav">
+ <div class="wrap navin">
+  <a class="brand" href="#home" aria-label="Ayush Sur home">ayush<span>.</span>sur</a>
+  <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+   <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="navactions">
+   <button class="iconbtn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">☼</button>
+   <a class="btn primary" href="#contact">Let's connect ↗</a>
+   <button class="menuBtn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+ </div>
+</header>
+<main id="home">
+ <section class="wrap hero">
+  <div class="reveal">
+   <div class="eyebrow"><span class="dot"></span> IIT Madras · Data Science & Applications</div>
+   <h1>Turning data into <span class="gradient">useful intelligence.</span></h1>
+   <p>I'm Ayush Sur, a Data Science student at IIT Madras interested in machine learning, NLP, and transformer-based systems. I enjoy building end-to-end projects—from preprocessing and evaluation to interactive demos.</p>
+   <div class="cta">
+    <a class="btn primary" href="#projects">Explore my work <span>↘</span></a>
+    <a class="btn secondary" href="https://github.com/23f3004113" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <button class="btn secondary" id="copyEmail">Copy email ⧉</button>
+   </div>
+  </div>
+  <aside class="profilecard reveal">
+   <div class="orbit">⌘</div>
+   <div class="avatar" aria-label="Initials AS">AS</div>
+   <h2>Ayush Sur</h2>
+   <div class="muted">Data Science Student · IIT Madras</div>
+   <div class="status"><span class="dot"></span> Learning, building, improving</div>
+   <div class="profileline"></div>
+   <p class="muted" style="font-size:.9rem;margin:0 0 14px">Areas I’m exploring</p>
+   <div class="stack"><span class="chip">Machine Learning</span><span class="chip">NLP</span><span class="chip">Deep Learning</span><span class="chip">Transformers</span><span class="chip">Data Analysis</span><span class="chip">SQL</span></div>
+   <div class="profileline"></div>
+   <div style="display:flex;justify-content:space-between;gap:15px;font-size:.86rem"><span class="muted">Based in</span><b>Kolkata, India</b></div>
+   <div style="display:flex;justify-content:space-between;gap:15px;font-size:.86rem;margin-top:10px"><span class="muted">Graduation target</span><b>Dec 2027</b></div>
+  </aside>
+ </section>
+ <section class="section" id="about">
+  <div class="wrap">
+   <div class="sectionhead reveal"><div><div class="kicker">A little about me</div><h2>Curiosity, code & careful validation.</h2></div><p>I like understanding why a model works—not just training it. My approach emphasizes clean preprocessing, fair validation, meaningful metrics, and clear communication.</p></div>
+   <div class="aboutgrid">
+    <article class="card reveal"><h3>What I bring</h3><p>Hands-on academic project experience across text classification, transformer fine-tuning, model evaluation, and a full-stack Flask application. I’m continuing to strengthen my engineering practice through implementation and iteration.</p>
+     <div class="featurelist"><div class="feature"><b>End-to-end ML</b><span>Prepare, train, compare, evaluate</span></div><div class="feature"><b>Model evaluation</b><span>Macro F1, Accuracy, MAP@3</span></div><div class="feature"><b>NLP & Transformers</b><span>TF-IDF, BERT, RoBERTa</span></div><div class="feature"><b>Practical apps</b><span>Gradio, Flask, SQLite</span></div></div>
+    </article>
+    <article class="card reveal"><h3>My working principles</h3><p>Good results need more than a high score. I pay attention to data leakage, reproducible splits, clear baselines, and documenting what the evaluation actually shows.</p><div class="profileline"></div><div class="achievement"><div class="big">01</div><div><b>Start with a baseline</b><p>Build a simple, interpretable starting point before adding complexity.</p></div></div><div class="profileline"></div><div class="achievement"><div class="big">02</div><div><b>Validate rigorously</b><p>Use appropriate metrics and protect the validation process from leakage.</p></div></div><div class="profileline"></div><div class="achievement"><div class="big">03</div><div><b>Make it usable</b><p>Where practical, turn a model into a demo people can interact with.</p></div></div></article>
+   </div>
+  </div>
+ </section>
+ <section class="section" id="projects">
+  <div class="wrap">
+   <div class="sectionhead reveal"><div><div class="kicker">Selected work</div><h2>Projects built by doing.</h2></div><p>Filter by area, then open a project for more details. These summaries are based on my academic projects and competition work.</p></div>
+   <div class="filters reveal" role="group" aria-label="Filter projects">
+    <button class="filter active" data-filter="all">All projects</button><button class="filter" data-filter="ml">Machine Learning</button><button class="filter" data-filter="nlp">NLP & Transformers</button><button class="filter" data-filter="app">Applications</button>
+   </div>
+   <div class="projects">
+    <article class="project reveal" data-category="nlp ml">
+     <div class="projectvisual"><span class="projectnum">PROJECT / 01</span><span class="projecticon">✳</span></div>
+     <div class="projectbody"><div class="projectmeta">Jun – Aug 2026 · Deep Learning & GenAI</div><h3>Smart MCQ Solver</h3><p>An end-to-end multiple-choice question solver comparing a TF-IDF + neural-network baseline with fine-tuned transformer models.</p><div class="stack"><span class="chip">PyTorch</span><span class="chip">BERT</span><span class="chip">RoBERTa</span><span class="chip">Gradio</span></div><div class="projectfoot"><span class="muted" style="font-size:.8rem">Grade A · Rank 51 / 1,530</span><button class="textbtn details" data-project="mcq">View details ↗</button></div></div>
+    </article>
+    <article class="project reveal" data-category="ml nlp">
+     <div class="projectvisual"><span class="projectnum">PROJECT / 02</span><span class="projecticon">◉</span></div>
+     <div class="projectbody"><div class="projectmeta">Jan – Apr 2026 · ML Practice</div><h3>Comment Category Prediction</h3><p>A text-classification pipeline for public comments using TF-IDF, feature selection, model comparisons, and macro-F1-focused evaluation.</p><div class="stack"><span class="chip">scikit-learn</span><span class="chip">TF-IDF</span><span class="chip">NLP</span><span class="chip">Macro F1</span></div><div class="projectfoot"><span class="muted" style="font-size:.8rem">Kaggle competition</span><button class="textbtn details" data-project="comments">View details ↗</button></div></div>
+    </article>
+    <article class="project reveal" data-category="app">
+     <div class="projectvisual"><span class="projectnum">PROJECT / 03</span><span class="projecticon">▦</span></div>
+     <div class="projectbody"><div class="projectmeta">Jul – Aug 2025 · MAD I</div><h3>Vehicle Parking App</h3><p>A multi-user parking management application with admin controls, spot reservations, availability tracking, and cost calculation.</p><div class="stack"><span class="chip">Flask</span><span class="chip">Jinja2</span><span class="chip">Bootstrap</span><span class="chip">SQLite</span></div><div class="projectfoot"><span class="muted" style="font-size:.8rem">Grade A</span><button class="textbtn details" data-project="parking">View details ↗</button></div></div>
+    </article>
+   </div>
+   <p class="muted" style="font-size:.82rem;margin-top:18px">Project source links can be added to each card once the specific public repositories or demos are ready.</p>
+  </div>
+ </section>
+ <section class="section" id="skills">
+  <div class="wrap">
+   <div class="sectionhead reveal"><div><div class="kicker">Toolkit</div><h2>Tools I work with.</h2></div><p>A practical skill set spanning data preparation, classical machine learning, NLP, deep learning, and application development.</p></div>
+   <div class="skillsgrid">
+    <article class="card skillgroup reveal"><h3><span>⌁</span> ML & Statistics</h3><div class="stack"><span class="chip">Supervised Learning</span><span class="chip">Unsupervised Learning</span><span class="chip">Model Validation</span><span class="chip">Feature Selection</span><span class="chip">Statistical Analysis</span><span class="chip">Optimization</span><span class="chip">EDA</span></div></article>
+    <article class="card skillgroup reveal"><h3><span>✳</span> Deep Learning & NLP</h3><div class="stack"><span class="chip">PyTorch</span><span class="chip">Hugging Face</span><span class="chip">BERT</span><span class="chip">RoBERTa</span><span class="chip">Transformers</span><span class="chip">TF-IDF</span><span class="chip">Neural Networks</span></div></article>
+    <article class="card skillgroup reveal"><h3><span>⌘</span> Data & Engineering</h3><div class="stack"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">scikit-learn</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div></article>
+    <article class="card skillgroup reveal"><h3><span>▤</span> Apps & Deployment</h3><div class="stack"><span class="chip">Gradio</span><span class="chip">Flask</span><span class="chip">Jinja2</span><span class="chip">Bootstrap</span><span class="chip">SQLite</span><span class="chip">PostgreSQL</span><span class="chip">Git & GitHub</span></div></article>
+    <article class="card skillgroup reveal"><h3><span>◫</span> Experimentation</h3><div class="stack"><span class="chip">Weights & Biases</span><span class="chip">Train/Validation Splits</span><span class="chip">Accuracy</span><span class="chip">Macro F1</span><span class="chip">MAP@3</span></div></article>
+    <article class="card skillgroup reveal"><h3><span>◎</span> Certifications & Languages</h3><div class="stack"><span class="chip">HackerRank SQL Basic</span><span class="chip">HackerRank SQL Intermediate</span><span class="chip">English</span><span class="chip">Hindi</span><span class="chip">Bengali</span></div></article>
+   </div>
+  </div>
+ </section>
+ <section class="section" id="journey">
+  <div class="wrap">
+   <div class="sectionhead reveal"><div><div class="kicker">Education & milestones</div><h2>The learning journey.</h2></div><p>My current focus is strengthening fundamentals while applying them through projects and competitions.</p></div>
+   <div class="timeline">
+    <article class="card timelineitem reveal"><div class="date">2023 – Present</div><h3>B.S. in Data Science and Applications</h3><p>Indian Institute of Technology Madras</p></article>
+    <article class="card timelineitem reveal"><div class="date">2025 – 2026</div><h3>Diploma in Data Science</h3><p>Completed at IIT Madras in May 2026.</p></article>
+    <article class="card timelineitem reveal"><div class="date">2026</div><h3>Smart MCQ Solver Challenge</h3><p>Grade A; ranked 51st among 1,530 participants on the Kaggle leaderboard, according to my resume.</p></article>
+    <article class="card timelineitem reveal"><div class="date">2020 – 2022</div><h3>Higher Secondary Education</h3><p>Narayana School, Newtown, Kolkata</p></article>
+   </div>
+  </div>
+ </section>
+ <section class="section" id="contact">
+  <div class="wrap">
+   <div class="contactbox reveal">
+    <div><div class="kicker">Have a project in mind?</div><h2>Let's make something useful with data.</h2><p>I'm open to discussing entry-level data science, machine learning, NLP, and Python projects. Share the problem, dataset context, and what a successful outcome would look like.</p><div class="cta"><a class="btn primary" href="mailto:ayushsur2003@gmail.com?subject=Project%20enquiry">Email me ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/ayushsur1/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></div>
+    <div class="contactlinks">
+     <a class="contactlink" href="mailto:ayushsur2003@gmail.com"><div><b>Email</b><br><span>ayushsur2003@gmail.com</span></div><b>↗</b></a>
+     <a class="contactlink" href="https://github.com/23f3004113" target="_blank" rel="noreferrer"><div><b>GitHub</b><br><span>Projects & code</span></div><b>↗</b></a>
+     <a class="contactlink" href="https://www.kaggle.com/ayushsur2003" target="_blank" rel="noreferrer"><div><b>Kaggle</b><br><span>Competitions & notebooks</span></div><b>↗</b></a>
+     <a class="contactlink" href="https://www.linkedin.com/in/ayushsur1/" target="_blank" rel="noreferrer"><div><b>LinkedIn</b><br><span>Professional profile</span></div><b>↗</b></a>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Ayush Sur · Built with curiosity and code.</span><a href="#home">Back to top ↑</a><span>Designed as an interactive portfolio</span></footer>
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modalbox"><div class="modalhead"><div><div class="kicker" id="modalKicker">Project details</div><h2 id="modalTitle">Project title</h2></div><button class="close" id="modalClose" aria-label="Close details">✕</button></div><div id="modalContent"></div><div class="cta" style="margin-top:22px"><a class="btn primary" href="https://github.com/23f3004113" target="_blank" rel="noreferrer">Explore GitHub profile ↗</a><button class="btn secondary" id="modalDone">Close</button></div></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+<script>
+const $=(s,root=document)=>root.querySelector(s), $$=(s,root=document)=>[...root.querySelectorAll(s)];
+$('#year').textContent=new Date().getFullYear();
+const nav=$('#navlinks'), menu=$('#menuBtn');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
+$$('#navlinks a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+$('#themeToggle').addEventListener('click',()=>{document.body.classList.toggle('light');$('#themeToggle').textContent=document.body.classList.contains('light')?'☾':'☼'});
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target)}}),{threshold:.1});
+$$('.reveal').forEach(el=>revealObserver.observe(el));
+const sections=$$('main section[id]'), navAnchors=$$('#navlinks a');
+const sectionObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){navAnchors.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-35% 0px -55% 0px'});
+sections.forEach(s=>sectionObserver.observe(s));
+$$('.filter').forEach(btn=>btn.addEventListener('click',()=>{$$('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;$$('.project').forEach(card=>{const cats=card.dataset.category.split(' ');card.style.display=(f==='all'||cats.includes(f))?'flex':'none'})}));
+const projectInfo={
+ mcq:{kicker:'Jun – Aug 2026 · Deep Learning & GenAI',title:'Smart MCQ Solver Challenge',body:`<p>Developed an end-to-end multiple-choice question solving system using a traditional machine-learning baseline and transformer models.</p><ul><li>Built a TF-IDF + neural-network baseline.</li><li>Fine-tuned BERT-base and RoBERTa-base using Hugging Face Transformers and PyTorch.</li><li>Encoded each question with five answer options and scored candidate answers.</li><li>Used preprocessing and validation steps including duplicate removal, stratified train-validation splitting, and leakage prevention.</li><li>Evaluated using Accuracy, Macro F1, and MAP@3; tracked experiments with Weights & Biases.</li><li>Deployed the final RoBERTa model as an interactive Gradio app on Hugging Face Spaces.</li></ul><p><b>Outcome:</b> Grade A and 51st out of 1,530 participants on the Kaggle leaderboard.</p>`},
+ comments:{kicker:'Jan – Apr 2026 · Machine Learning Practice',title:'Comment Category Prediction Challenge',body:`<p>Built a text-classification pipeline to predict sentiment categories from public comments using TF-IDF and scikit-learn.</p><ul><li>Prepared data and created train-validation splits before vectorization to reduce leakage risk.</li><li>Experimented with feature selection and classification models.</li><li>Optimized model evaluation around macro-F1.</li><li>Compared results iteratively to improve leaderboard performance.</li></ul><p>The project emphasized reliable validation and systematic experimentation rather than relying on a single model run.</p>`},
+ parking:{kicker:'Jul – Aug 2025 · Modern Application Development I',title:'Vehicle Parking App',body:`<p>Developed a full-stack, multi-user parking management application with separate Admin and User roles.</p><ul><li>Parking-lot management and spot availability tracking.</li><li>Parking reservations and dynamic cost calculation.</li><li>Flask backend with Jinja2 templates, Bootstrap, and SQLite.</li><li>Data visualizations for parking operations.</li></ul><p><b>Outcome:</b> Grade A for the academic project.</p>`}
+};
+const modal=$('#projectModal');
+function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
+$$('.details').forEach(b=>b.addEventListener('click',()=>{const d=projectInfo[b.dataset.project];$('#modalKicker').textContent=d.kicker;$('#modalTitle').textContent=d.title;$('#modalContent').innerHTML=d.body;modal.classList.add('open');document.body.style.overflow='hidden';$('#modalClose').focus()}));
+$('#modalClose').addEventListener('click',closeModal);$('#modalDone').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const toast=$('#toast');let toastTimer;
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),1800)}
+$('#copyEmail').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('ayushsur2003@gmail.com');showToast('Email copied to clipboard')}catch(e){window.location.href='mailto:ayushsur2003@gmail.com';showToast('Opening your email app')}});
+</script>
+</body>
+</html>
